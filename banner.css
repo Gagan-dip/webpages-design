@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid;
+    background-image: linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.62)),url(https://st3.depositphotos.com/8911320/33966/i/450/depositphotos_339665118-stock-photo-render-modern-office-interior.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .banner:hover{
+    background-image: linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.62)),url(https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?cs=srgb&dl=pexels-atbo-66986-245240.jpg&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    line-height: 1.5;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height:15px;
+}
+.button{
+    width: 140px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background-color: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.contact_box{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,.5),rgba(0,0,0,.5)),url(https://img.freepik.com/premium-photo/defocused-office-background-blurred-background-generative-ai_861171-832.jpg?w=1060);
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 70px;
+
+    
+}
+.contact_text{
+    width: 1200px;
+    height: auto;
+    margin:  auto;
+    color: #fff;
+    position: relative;
+    
+}
+
+.contact_para{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.contact_box h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding: 20px;
+    margin-top: 0%;
+    letter-spacing: 2px;
+  
+}
+.contact_box .contact_button{
+    width: 160px;
+    height: 40px;
+    background: orangered;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.contact_button:hover{
+    background: #fff;
+
+}
+ .dev{
+    color: orangered;
+    font-size: 60px;
+}
+
+.form{
+    width: 250px;
+    height:400px;
+    background: linear-gradient(to top,rgba(0,0,0,.8),rgba(0,0,0,.8));
+    position: relative;
+    top: -400px;
+    /* float: left; */
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+
+
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: orangered;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid orangered;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+}
+.form input:focus{
+    outline: none;
+    
+}
+.login{
+    width: 240px;
+    height: 40px;
+    background: orangered;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+    /* color: #fff; */
+
+}
+.login:hover{
+    background-color: #fff;
+    color: black;
+}
+.login a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: orangered;
+}
+.liw{
+    padding: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icon a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.icon ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease ;
+
+}
+.icon ion-icon:hover{
+    color: orangered;
+}

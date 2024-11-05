@@ -1,0 +1,76 @@
+.nav{
+    /* height: 40px; */
+    width: 100%;
+    border: 2px solid;
+    background-color: #000;
+}
+.nav li{
+    display: inline;
+    margin-left: 50px;
+}
+.nav li a{
+    text-decoration: none;
+    color: #ffff;
+}
+.outbox{
+    height: 600px;
+    width: 100%;
+    border: 2px solid;
+    background-color: rgb(212, 133, 147)
+}
+.inbox{
+    height: 400px;
+    width: 600px;
+    border: 2px solid  rgb(212, 133, 147);
+    float: left;
+    margin-top: 43px;
+    margin-left: 91px;
+}
+.img{
+    background-image: url(g-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 500px  400px;
+    background-position: center;
+}
+.text{
+    margin-left: 80px;
+    margin-top: 60px;
+}
+.btn{
+    margin-left: 80px;
+    padding: 9px;
+    width: 120px;
+    background-color: #fff;
+    font-weight: 600;
+    border: none;
+}
+.video{
+    color: white;
+}
+.outbox2{
+    height: 500px;
+    width: 100%;
+    border: 2px solid;
+    /* background-color: rgb(212, 133, 147) */
+}
+.icon-box{
+    height: 200px;
+    width: 393px;
+    border: 2px solid;
+    float: left;
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-bottom: 70px;
+    padding-right: 14px;
+    border: none;
+}
+.icon-box i{
+    font-size: 65px;
+}
+.read-more{
+    padding: 7px;
+    width: 130px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+}

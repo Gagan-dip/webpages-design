@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <section class="faq-section py-3">
+        <div class="container">
+            <div class="w-lg-50 mx-auto">
+                <h6 class="mb-2">FAQ | Frequently Asked Questions</h6>
+                <h2 class="mb-5">Have a Questions</h2>
+                <div class="accordion accordion-flush" id="accordionExample">
+
+                    <!-- 1: coll1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coll1" aria-expanded="true" aria-controls="coll1">
+                                <h5>What is Semantic HTML and how does it work?</h5>
+                            </button>
+                        </h2>
+                        <div id="coll1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Semantic HTML refers to a method of coding where HTML markup is used to emphasize the meaning or semantics of the existing content.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2: coll2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll2" aria-expanded="false" aria-controls="coll2">
+                                <h5>What do you know about the Box Sizing property?</h5>
+                            </button>
+                        </h2>
+                        <div id="coll2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                The Box Sizing property in CSS defines how developers should calculate the width and height of a box.
+                                <br>Content Box is when the default height and width get applied to the content of an element. The border and padding lie outside the box.
+                                <br>Padding Box is when the developer adds the dimensions to include the padding and content of the element. This adds a border outside the given box.
+                                <br>Border Box is when the box dimensions apply to the border, padding, and content.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3: coll3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll3" aria-expanded="false" aria-controls="coll3">
+                                <h5>Define the ways in which you can hide an element using CSS.</h5>
+                            </button>
+                        </h2>
+                        <div id="coll3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                There are three ways to hide elements with CSS.
+                                <br>display:none can hide the content so that it doesn’t get stored in the DOM.
+                                <br>visibility:hidden adds an element to the DOM and occupies space. However, the user cannot see it.
+                                <br>position:absolute makes the element appear outside the screen, not on the screen.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4: coll4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll4" aria-expanded="false" aria-controls="coll4">
+                                <h5>What does Callback mean in JavaScript?</h5>
+                            </button>
+                        </h2>
+                        <div id="coll4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Callback is a JavaScript function that developers send as a parameter or argument to other functions. You can call this function whenever the function it is provided to gets called.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5: coll5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll5" aria-expanded="false" aria-controls="coll5">
+                                <h5>Differences between Undefined, Undeclared, and Null in JavaScript.</h5>
+                            </button>
+                        </h2>
+                        <div id="coll5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Undefined refers to a situation where a variable is declared but no value has been assigned to the variable yet.
+                                <br>ex. let a; console.log(a); // Output: undefined
+                                <br>Null refers to the assignment of value to a variable that isn’t meant to contain any value.
+                                <br>ex. let b = null; console.log(b); // Output: null
+                                <br>Undeclared refers to variables that don’t exist in an application or program or haven’t been declared.
+                                <br>ex. console.log(c); // ReferenceError: c is not defined
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
